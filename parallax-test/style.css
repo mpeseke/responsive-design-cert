@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,800');
+
+html, body {
+    font-family: Open Sans;
+    font-size: 18px;
+    line-height: 28px;
+    scroll-behavior: smooth;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  h1 {
+    letter-spacing: -15px;
+    font-family: Open Sans;
+    color: black;
+    text-align: center;
+    font-size: 10rem;
+    font-weight: 800;
+    line-height: 200px;
+  }
+  
+  .MainContainer {
+    perspective: 1px;
+    transform-style: preserve-3d;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
+  
+  .ContentContainer {
+    position: relative;
+    display: block;
+    background-color: rgb(128, 123, 123);
+    z-index: 1;
+    height: 100vh;
+  }
+  
+  .Content {
+    max-width: 750px;
+    margin: 0 auto;
+    padding: 75px 0;
+  }
+  
+  p {
+    margin: 75px 0;
+  }
+  
+  .ParallaxContainer {
+    display: flex;
+    flex: 1 0 auto;
+    position: relative;
+    z-index: -1;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    transform: translateZ(-1px) scale(2);
+    background: url('kenBigArt.png');
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+
+    background-color: rgb(128, 123, 123);
+  }
+  
+
+  
