@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,800');
+@import url('https://fonts.googleapis.com/css?family=Palanquin+Dark:500&display=swap');
 
 html, body {
     font-family: Open Sans;
@@ -11,12 +12,22 @@ html, body {
   
   h1 {
     letter-spacing: -15px;
-    font-family: Open Sans;
-    color: black;
+    font-family: 'Palanquin Dark', sans-serif;
+    color: #EAF0F1;
     text-align: center;
     font-size: 10rem;
     font-weight: 800;
     line-height: 200px;
+    text-shadow: 5px 5px 15px black;
+  }
+
+  @media (max-width: 640px) {
+      h1 {
+        font-size: 5rem;  
+        line-height: 5rem;
+        letter-spacing: -7px;
+      }
+
   }
   
   .MainContainer {
@@ -30,7 +41,7 @@ html, body {
   .ContentContainer {
     position: relative;
     display: block;
-    background-color: rgb(128, 123, 123);
+    background-color: #EAF0F1;
     z-index: 1;
     height: 100vh;
   }
@@ -54,12 +65,20 @@ html, body {
     justify-content: center;
     align-items: center;
     transform: translateZ(-1px) scale(2);
-    background: url('kenBigArt.png');
+    background: 
+    /* top, transparent gradient */
+    linear-gradient(
+        132deg, 
+        rgba(0,0,0,0.75) 0%,
+        rgba(0,0,0,0.15) 85%
+    ),
+    /* bottom image */
+    url('kenBigArt.png');
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover; /* Resize the background image to cover the entire container */
 
-    background-color: rgb(128, 123, 123);
+    background-color: #EAF0F1;
   }
   
 
