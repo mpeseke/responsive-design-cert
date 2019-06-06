@@ -52,30 +52,45 @@
                     <div class="radio-field">
                         <p>Please specify your practice area.</p>
                         <label for="ui/ux">
-                            <input id="ui/ux" type="radio" name="practice-area">UI/UX
+                            <input id="ui/ux" type="radio" name="practice-area" value="1">UI/UX
                         </label>
 
                         <label for="db">
-                            <input id="db" type="radio" name="practice-area">DB
+                            <input id="db" type="radio" name="practice-area" value="2">DB
                         </label>
 
                         <label for="web">
-                            <input id="web" type="radio" name="practice-area">Web
+                            <input id="web" type="radio" name="practice-area" value="3">Web
                         </label>
 
                         <label for="java">
-                            <input id="java" type="radio" name="practice-area">Java
+                            <input id="java" type="radio" name="practice-area" value="4">Java
                         </label>
 
                         <label for="qa">
-                            <input id="qa" type="radio" name="practice-area">Q.A.
+                            <input id="qa" type="radio" name="practice-area" value="5">Q.A.
                         </label>
                     </div>
 
                     <div class="checkboxes">
                         <p>Choose from the following languages:</p>
+                        <label for="javascript"><input id="javascript" type="checkbox" name="languages" value="javascript"> JavaScript </label>
+                        <label for="java"><input id="java" type="checkbox" name="languages" value="java"> Java </label>
+                        <label for="kotlin"><input id="kotlin" type="checkbox" name="languages" value="kotlin"> Kotlin </label>
+                        <label for="c#"><input id="c#" type="checkbox" name="languages" value="c#"> C# </label>
+                        <label for="php"><input id="php" type="checkbox" name="languages" value="php"> PHP </label>
+                        <label for="go"><input id="go" type="checkbox" name="languages" value="go"> Go </label>
+                        <label for="python"><input id="python" type="checkbox" name="languages" value="python"> Python </label>
+                        <label for="ruby"><input id="ruby" type="checkbox" name="languages" value="ruby"> Ruby </label>
                     </div>
 
+                    <div class="text-area">
+                        <textarea placeholder="Additional comments" type="text" id="comments" name="comment-area" rows="5" cols="30"></textarea>    
+                    </div>
+
+                    <div class="button-wrap">
+                        <button type="submit" id="submit">Submit</button>
+                    </div>
 
                 </form>
             </div>
